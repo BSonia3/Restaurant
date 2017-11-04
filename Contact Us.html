@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head> 
+
+    <title>Contact Us</title>
+    <link href="restaurantStyles.css" 
+    rel="stylesheet"
+    type="text/css"/>
+      <!--this is internal css style sheet -->
+  <style>
+    /* Add a background color and some padding around the form */
+    
+    input[type=submit] {
+    background-color:rgba(128, 128, 128, 0.63);
+    text-align: center;
+    width: 100px;
+    border: 1px solid;
+    height:25px ;
+    margin-left:50%
+
+    }
+    
+        label {
+        display: inline-block;
+        width:40%;
+	  	text-align: right;
+	  	margin: 10px
+	}
+       
+       
+
+    input[type=text],select{
+        height:25px ;
+        width: 200px;
+        border: 1px solid;
+        margin-top:5px;
+        margin-bottom: 5px; 
+      }
+      textarea{
+      width: 200px;    
+      height:100px;
+      border: 1px solid;
+      }
+     
+
+     .container {
+         font-style:italic ;
+         font-size:20px;
+         
+
+
+      }
+
+      
+
+
+  
+  </style>
+
+</head>
+<body>
+<h1>Steak House</h1>    
+<hr/>
+
+<div class="links">
+<a id="a1" href="index.html">Home</a>
+<a id="a2" href="Menu.html">Menu</a>
+<a href="Contact Us.html">Contact Us</a>
+</div>
+
+
+<hr/>
+
+
+<div class="container">
+<form action="#" method="post">
+   <label for="Name"> Name:</label>
+   <input type="text"  name="name"/><br/>
+    
+   <label for="email">Email:</label>
+   <input type="text"  name="email"/><br/>
+
+   <label for="phone">Phone:</label>
+   <input type="text"  name="Phone"/><br/>
+
+   <label for="inquery">Reason for Inquiry:</label>
+   <select name="inquery">
+     
+          <option value="Catering">Catering</option>
+          <option value="Private Party">Private Party</option>
+          <option value="Feedback">Feedback</option>
+          <option value="Other">Other</option>
+        
+   </select>
+    
+  
+   <br/>
+
+  <label for="Additional Information">Information:</label>
+  <textarea name="Additional Information"></textarea></textarea><br/>
+
+
+  <label for="radio">Have you been to the restaurant?</label>
+  <input type="radio" name="answer" value="No" checked/>NO 
+  <input type="radio" name="answer" value="yes"/>Yes
+   <br/>
+
+  <label for="checkbox">Best days to contact you:</label>
+  <input type="checkbox" name="days" value="monday">M
+  <input type="checkbox" name="days" value="tuesday">T
+  <input type="checkbox" name="days" value="wednesday">W
+  <input type="checkbox" name="days" value="thuersday">Th
+  <input type="checkbox" name="days" value="Friday">F <br/>
+
+  <input type="submit" value="Send Request"/>
+
+
+    
+</form> 
+
+</div>
+
+
+<div class="footer">
+ <hr/>
+    <p>50 Street Philadelphia Pa 19055 <br/>
+                  <br/>  777 333 35 35  </p>
+ </div>
+ 
+</body>
+</html>
